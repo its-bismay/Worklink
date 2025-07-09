@@ -1,0 +1,62 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import AppLayout from "./layouts/app.layout";
+import LandingPage from "./pages/LandingPage";
+import OnboardingPage from "./pages/OnboardingPage";
+import Job from "./pages/Job";
+import JobListing from "./pages/JobListing";
+import MyJob from "./pages/MyJob";
+import PostJob from "./pages/PostJob";
+import SavedJob from "./pages/SavedJob";
+import { ThemeProvider } from "./components/theme-provider";
+import './App.css'
+
+
+function App() {
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <LandingPage/>
+      },
+      {
+        path: '/onboarding',
+        element: <OnboardingPage/>
+      },
+      {
+        path: '/jobs',
+        element: <JobListing/>
+      },
+      {
+        path: '/job/:id',
+        element: <Job/>
+      },
+      {
+        path: '/post/jobs',
+        element: <PostJob/>
+      },
+      {
+        path: '/saved',
+        element: <SavedJob/>
+      },
+      {
+        path: '/my-jobs',
+        element: <MyJob/>
+      }
+    ]
+  }
+])
+
+
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+
+      <RouterProvider router ={router} />
+
+    </ThemeProvider>
+  )
+}
+
+export default App
