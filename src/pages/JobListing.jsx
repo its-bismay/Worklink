@@ -67,7 +67,7 @@ const crealFilters = () => {
 
   return (
     <div>
-      <h1 className="gradient-title font-extrabold text-5xl sm:text-6xl text-center pb-8">Latest Jobs</h1>
+      <h1 className="gradient-title font-extrabold text-4xl sm:text-5xl text-center pb-8">Latest Jobs</h1>
 
       <form onSubmit={handleSearch} className="flex h-14 w-full items-center gap-2 mb-3">
         <Input 
