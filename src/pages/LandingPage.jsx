@@ -24,7 +24,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+
 const LandingPage = () => {
+
   return (
     <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-12">
       <section className="text-center">
