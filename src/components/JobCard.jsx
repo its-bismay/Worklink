@@ -50,7 +50,7 @@ const JobCard = ({job,isMyJob = false, savedIntial = false, onJobSaved = () => {
             </CardContent>
             <CardFooter className={"flex gap-2"}>
                 <Link to={`/job/${job.id}`} className="flex-1">
-                <Button variant={"secondary"} className={"w-full"}>
+                <Button variant={"secondary"} className={"w-full cursor-pointer"}>
                     More Details
                 </Button>
                 </Link>
