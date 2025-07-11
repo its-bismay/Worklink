@@ -141,3 +141,21 @@ export async function savejobs(token, {alreadySaved}, saveData){
     
         return data;
     }
+
+    export async function deleteJobs(token, {job_id}){
+        const supabase = await supabaseClient(token);
+    
+        const {data, error} = await supabase
+        .from('jobs')
+        .delete()
+        .eq("id", job_id)
+        .select();
+    
+    
+        if(error){
+            console.error("Error deleting my jobs:", error)
+            return null;
+        }
+    
+        return data;
+    }
