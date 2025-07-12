@@ -100,32 +100,6 @@ Before you begin, ensure you have the following installed:
 
 The application will be available at `http://localhost:5173`
 
-## 🏗️ Project Structure
-
-```
-worklink/
-├── src/
-│   ├── components/       # Reusable UI components
-│   │   ├── ui/          # ShadCN UI components
-│   │   └── forms/       # Form components
-│   ├── pages/           # Application pages/routes
-│   │   ├── auth/        # Authentication pages
-│   │   ├── jobs/        # Job-related pages
-│   │   └── dashboard/   # Dashboard pages
-│   ├── hooks/           # Custom React hooks
-│   ├── lib/             # Utility functions and configurations
-│   │   ├── supabase.js  # Supabase client configuration
-│   │   └── utils.js     # Helper functions
-│   ├── api/             # API service functions
-│   ├── assets/          # Static assets (images, icons)
-│   └── styles/          # Global styles and CSS files
-├── public/              # Static public assets
-├── components.json      # ShadCN UI configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-├── vite.config.js       # Vite configuration
-└── package.json         # Dependencies and scripts
-```
-
 ## 🔧 Available Scripts
 
 - `npm run dev` - Start development server
