@@ -16,7 +16,7 @@ if (!PUBLISHABLE_KEY) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ClerkProvider appearance={{baseTheme: shadesOfPurple}} publishableKey={PUBLISHABLE_KEY} afterSignOutUrl='/'>
+    <ClerkProvider appearance={{baseTheme: shadesOfPurple}} publishableKey={PUBLISHABLE_KEY} signInFallbackRedirectUrl='/onboarding' signUpFallbackRedirectUrl='/onboarding' afterSignOutUrl='/'>
       <App />
     </ClerkProvider>
   </React.StrictMode>,
